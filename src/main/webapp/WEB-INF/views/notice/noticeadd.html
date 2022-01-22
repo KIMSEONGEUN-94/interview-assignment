@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/noticeadd-layout.html}">
+<head>
+    <title>게시글 :: 글쓰기</title>
+</head>
+<th:block layout:fragment="content">
+	<div class="inner-wrap">
+		<div class="button-wrap">
+			<button class="notice-cancel">취소</button>
+			<button class="notice-add">저장</button>
+	    </div>
+	    <div>
+	    	<input class="subject" id="subject-name" type="text" maxlength="15" placeholder="제목을 입력하세요."/>
+	    </div>
+        <div>
+			<!-- <input type="text" id="file-txt" placeholder="선택된 파일 없음" disabled/> -->
+			<label for="file-input"></label>
+			<input type="file" id="file-input" webkitRelativePath>
+		</div>
+	</div>
+</th:block>
+</html>
+

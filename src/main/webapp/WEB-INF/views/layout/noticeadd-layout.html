@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/default.html}">
+<th:block layout:fragment="sub-layout">
+    <th:block layout:fragment="content"></th:block>
+    <th:block layout:fragment="script">
+        <script th:src="@{/js/noticeadd.js}"></script>
+    </th:block>
+</th:block>
+</html>
